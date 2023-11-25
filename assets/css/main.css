@@ -1,0 +1,567 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 60px;
+}
+nav .divnavbar {
+  width: 90%;
+  height: 100%;
+}
+nav .divnavbar .navbarblog {
+  justify-content: flex-end;
+}
+nav .divnavbar .navbarblog .navbarblogul {
+  display: flex;
+  justify-content: end;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 25px;
+  gap: 30px;
+  color: #222222;
+  width: 70%;
+}
+nav .divnavbar .navbarblog .navbarblogul li a:hover {
+  color: #69b4fd;
+}
+nav .divnavbar .navbarblog .navbarblogul .homelist {
+  font-size: 16px;
+  font-weight: 600;
+}
+nav .divnavbar .navbarblog .navbarblogul .bloggerli .bloggerlist {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+nav .divnavbar .navbarblog .navbarblogul .bloggerli .bloggerlist i {
+  font-size: 20px;
+}
+nav .divnavbar .navbarblog .navbarblogul .bloggerli:hover .bloggerlistdropdown {
+  display: block;
+  position: absolute;
+}
+nav .divnavbar .navbarblog .navbarblogul .bloggerli .bloggerlistdropdown {
+  display: none;
+  background-color: white;
+}
+nav .divnavbar .navbarblog .navbarblogul .bloggerli .bloggerlistdropdown ul {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+nav .divnavbar .navbarblog .navbarblogul .bloggerli .bloggerlistdropdown ul li {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+nav .divnavbar .navbarblog .navbarblogul .bloggerli .bloggerlistdropdown ul li:hover {
+  color: #69b4fd;
+}
+
+#discounttoner {
+  background-image: url(/assets/images/header-bg.jpg);
+  width: 100%;
+  height: 700px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+#discounttoner .discounttonermain {
+  height: 100%;
+  display: flex;
+  align-items: end;
+}
+#discounttoner .discounttonermain h1 {
+  width: 70%;
+  color: white;
+  font-size: 60px;
+  font-weight: 700;
+}
+#discounttoner .likecomment {
+  height: 100%;
+  display: flex;
+  align-items: end;
+  justify-content: space-around;
+}
+#discounttoner .likecomment .likeandcomment {
+  display: flex;
+  gap: 16px;
+}
+#discounttoner .likecomment .likeandcomment p {
+  color: white;
+  font-size: 15px;
+  font-weight: 600;
+}
+#discounttoner .likecomment .markwiens {
+  display: flex;
+  height: 50%;
+  gap: 10px;
+  justify-content: end;
+}
+#discounttoner .likecomment .markwiens img {
+  width: 40px;
+  height: 40px;
+}
+#discounttoner .likecomment .markwiens .markwienstext {
+  text-align: right;
+}
+#discounttoner .likecomment .markwiens .markwienstext h4 {
+  font-size: 16px;
+  font-family: "Poppins", sans-serif;
+  color: #222;
+  font-weight: 600;
+  color: white;
+}
+#discounttoner .likecomment .markwiens .markwienstext p {
+  font-size: 13px;
+  color: white;
+}
+
+#latestnews {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 730px;
+  width: 100%;
+  background-color: #faf9f9;
+}
+#latestnews .latestnewsmain {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 200px;
+  text-align: center;
+  flex-direction: column;
+}
+#latestnews .latestnewsmain h1 {
+  color: #222;
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-size: 33px;
+}
+#latestnews .latestnewsmain p {
+  color: #9b9b9b;
+  width: 55%;
+}
+#latestnews .whatmakes {
+  display: flex;
+  gap: 10px;
+  flex-direction: column;
+}
+#latestnews .whatmakes p {
+  width: 30%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 14px;
+  background-color: black;
+  line-height: 23px;
+  font-weight: 100;
+  color: #a8a4a4;
+}
+#latestnews .whatmakes h4 {
+  font-family: "Poppins", sans-serif;
+  color: #222;
+  font-weight: 700;
+  width: 70%;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+#hottropics {
+  width: 100%;
+  height: 960px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #f9f9ff;
+}
+#hottropics .row .hottropicstext {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 200px;
+  flex-direction: column;
+  text-align: center;
+}
+#hottropics .row .hottropicstext h1 {
+  font-family: "Poppins", sans-serif;
+  color: #222;
+  font-weight: 600;
+  font-size: 36px;
+}
+#hottropics .row .hottropicstext p {
+  width: 65%;
+  color: #9b9b9b;
+}
+#hottropics .row .Becomes {
+  position: relative;
+  display: flex;
+  gap: 20px;
+}
+#hottropics .row .Becomes .Becomestext {
+  padding-top: 20px;
+  width: 100%;
+}
+#hottropics .row .Becomes .Becomestext h4 {
+  font-family: "Poppins", sans-serif;
+  color: #222;
+  font-weight: 600;
+  font-size: 20px;
+  cursor: pointer;
+}
+#hottropics .row .Becomes .Becomestext h4:hover {
+  color: #69b4fd;
+}
+#hottropics .row .Becomes .Becomestext p {
+  width: 67%;
+  color: #9b9b9b;
+}
+#hottropics .row .Becomes .Becomestext .month {
+  display: flex;
+  align-items: center;
+  width: 16%;
+  height: 50%;
+  justify-content: center;
+  flex-direction: column;
+  background-color: #111111;
+  position: absolute;
+  text-align: center;
+  top: 0%;
+  left: 0%;
+}
+#hottropics .row .Becomes .Becomestext .month h4 {
+  height: 20%;
+  color: white;
+}
+#hottropics .row .Becomes .Becomestext .month p {
+  height: 20%;
+}
+#hottropics .row .Becomes .Becomestext .heartandcomment {
+  display: flex;
+  justify-content: space-around;
+}
+#hottropics .row .Becomes .Becomestext .heartandcomment p {
+  width: 50%;
+  color: #9b9b9b;
+}
+#hottropics .loadmore {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 170px;
+}
+#hottropics .loadmore button {
+  width: 13%;
+  height: 24%;
+  background-color: #69b4fd;
+  border-radius: 25px;
+  font-size: 14px;
+  border: none;
+  color: white;
+}
+#hottropics .loadmore button:hover {
+  background: none;
+  color: #69b4fd;
+  border: 1px solid #69b4fd;
+}
+
+#fashionnews {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 920px;
+}
+#fashionnews .fashionnewsmain {
+  height: 270px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+#fashionnews .fashionnewsmain h1 {
+  font-weight: 600;
+  font-size: 36px;
+  font-family: "Poppins", sans-serif;
+  color: #222;
+}
+#fashionnews .fashionnewsmain p {
+  color: #777777;
+  width: 66%;
+  font-size: 16px;
+  text-align: center;
+}
+#fashionnews .addictionall {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  gap: 16px;
+  flex-direction: column;
+}
+#fashionnews .addictionall .jan {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 14px;
+  line-height: 23px;
+  font-weight: 100;
+  background-color: black;
+  width: 50%;
+  height: 30px;
+  color: #a8a4a4;
+}
+#fashionnews .addictionall .heartcommentLike {
+  display: flex;
+  justify-content: space-between;
+}
+#fashionnews .addictionall .heartcommentLike p {
+  color: #777777;
+  width: 50%;
+  font-size: 15px;
+}
+#fashionnews h4 {
+  font-family: "Poppins", sans-serif;
+  color: #222;
+  width: 100%;
+  font-size: 20px;
+  cursor: pointer;
+  font-weight: 500;
+}
+#fashionnews h4:hover {
+  color: #5eacfa;
+}
+#fashionnews p {
+  width: 65%;
+  font-size: 16px;
+  color: #777777;
+}
+#fashionnews .loadmorebutton {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 160px;
+}
+#fashionnews .loadmorebutton button {
+  width: 16%;
+  height: 28%;
+  font-size: 14px;
+  font-weight: 600;
+  background-color: #56a2ee;
+  border-radius: 25px;
+  border: none;
+  color: white;
+}
+#fashionnews .loadmorebutton button:hover {
+  color: #69b4fd;
+  background: none;
+  border: 1px solid #668baf;
+}
+
+#bloggerteam {
+  width: 100%;
+  height: 780px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #eeeef5;
+}
+#bloggerteam .bloggerteamtext {
+  height: 190px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: start;
+}
+#bloggerteam .bloggerteamtext h1 {
+  font-size: 36px;
+  font-family: "Poppins", sans-serif;
+  color: #222;
+  font-weight: 600;
+}
+#bloggerteam .bloggerteamtext p {
+  color: #777777;
+  width: 66%;
+  text-align: center;
+  font-size: 16px;
+}
+#bloggerteam .bloggertext {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  flex-direction: column;
+}
+#bloggerteam .bloggertext p {
+  width: 90%;
+  font-size: 15px;
+  line-height: 23px;
+  font-weight: 400;
+  color: #777777;
+}
+#bloggerteam .developer {
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+#bloggerteam .developer .Seniorcoredeveloper {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+#bloggerteam .developer .Seniorcoredeveloper h4 {
+  height: 47px;
+  display: flex;
+  align-items: end;
+  color: #222222;
+  font-size: 20px;
+  font-weight: 700;
+}
+#bloggerteam .developer .Seniorcoredeveloper p {
+  color: #777777;
+  font-size: 17x;
+  font-weight: 600;
+}
+
+#bloggerfooter {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 500px;
+  background-color: #222222;
+}
+#bloggerfooter .bloggerfootermain {
+  width: 100%;
+  height: 60%;
+}
+#bloggerfooter .bloggerfootermain h6 {
+  height: 28%;
+  color: white;
+  font-size: 20px;
+  font-weight: 700;
+}
+#bloggerfooter .bloggerfootermain p {
+  font-size: 14px;
+  line-height: 23px;
+  font-weight: 300;
+  color: white;
+}
+#bloggerfooter .letter {
+  width: 100%;
+  height: 100%;
+}
+#bloggerfooter .letter h6 {
+  height: 30%;
+  font-size: 18px;
+  color: white;
+  font-weight: 700;
+}
+#bloggerfooter .letter P {
+  font-size: 16px;
+  color: white;
+  line-height: 23px;
+  font-weight: 300;
+}
+#bloggerfooter .letter .letteremailbutton {
+  width: 100%;
+  height: 25%;
+  display: flex;
+  gap: 30px;
+}
+#bloggerfooter .letter .letteremailbutton input {
+  width: 65%;
+  height: 98%;
+  border: none;
+  border-radius: 20px;
+}
+#bloggerfooter .letter .letteremailbutton input::placeholder {
+  padding: 15px;
+  font-size: 17px;
+  background-color: rgb(247, 244, 244);
+}
+#bloggerfooter .letter .letteremailbutton .subscribebtn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 30%;
+  height: 100%;
+  background-color: #69b4fd;
+  font-size: 14px;
+  font-weight: 500;
+  color: white;
+  border-radius: 23px;
+  border: none;
+  gap: 20px;
+}
+#bloggerfooter .feed {
+  height: 100%;
+}
+#bloggerfooter .feed .feedphotothree {
+  width: 100%;
+  gap: 5px;
+}
+#bloggerfooter .feed h6 {
+  font-size: 18px;
+  color: white;
+  font-weight: 500;
+  line-height: 20px;
+  height: 16%;
+}
+#bloggerfooter .copyright {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  height: 100%;
+  margin-top: 20px;
+}
+#bloggerfooter .copyright p {
+  width: 100%;
+  color: #777777;
+  font-size: 16px;
+}
+#bloggerfooter .copyright p span {
+  font-size: 16px;
+  color: #69b4fd;
+}
+#bloggerfooter .copyright .socialmediafour {
+  display: flex;
+  align-items: center;
+  width: 60%;
+  height: 100%;
+  color: white;
+  justify-content: end;
+  gap: 8px;
+}
+#bloggerfooter .copyright .socialmediafour i {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 12%;
+  height: 70%;
+  background-color: #111111;
+  color: #ffffff;
+}
+#bloggerfooter .copyright .socialmediafour i:hover {
+  background-color: #69b4fd;
+}

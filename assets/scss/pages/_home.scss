@@ -1,0 +1,659 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 60px;
+
+  .divnavbar {
+    width: 90%;
+    height: 100%;
+
+    .navbarblog {
+      justify-content: flex-end;
+
+      .navbarblogul {
+        display: flex;
+        justify-content: end;
+        font-size: 16px;
+        font-weight: 700;
+        line-height: 25px;
+        gap: 30px;
+        color: #222222;
+        width: 70%;
+
+        li {
+          a {
+            &:hover {
+              color: #69b4fd;
+            }
+          }
+        }
+
+        .homelist {
+          font-size: 16px;
+          font-weight: 600;
+        }
+
+        .bloggerli {
+          .bloggerlist {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+
+            i {
+              font-size: 20px;
+            }
+          }
+
+          &:hover .bloggerlistdropdown {
+            display: block;
+            position: absolute;
+          }
+
+          .bloggerlistdropdown {
+            display: none;
+           background-color: white;
+            ul {
+              list-style: none;
+              display: flex;
+              flex-direction: column;
+              gap: 5px;
+
+              li {
+                display: flex;
+                justify-content: center;
+                width: 100%;
+                cursor: pointer;
+                transition: 0.3s ease;
+
+                &:hover {
+                  color: #69b4fd;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+#discounttoner {
+  background-image: url(/assets/images/header-bg.jpg);
+  width: 100%;
+  height: 700px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  .discounttonermain {
+    height: 100%;
+    display: flex;
+    align-items: end;
+
+    h1 {
+      width: 70%;
+      color: white;
+      font-size: 60px;
+      font-weight: 700;
+    }
+  }
+
+  .likecomment {
+    height: 100%;
+    display: flex;
+    align-items: end;
+    justify-content: space-around;
+
+    .likeandcomment {
+      display: flex;
+      gap: 16px;
+
+      p {
+        color: white;
+        font-size: 15px;
+        font-weight: 600;
+      }
+    }
+
+    .markwiens {
+      display: flex;
+      height: 50%;
+      gap: 10px;
+      justify-content: end;
+      img {
+        width: 40px;
+        height: 40px;
+      }
+
+      .markwienstext {
+        text-align: right;
+
+        h4 {
+          font-size: 16px;
+          font-family: "Poppins", sans-serif;
+          color: #222;
+          font-weight: 600;
+          color: white;
+        }
+
+        p {
+          font-size: 13px;
+          color: white;
+        }
+      }
+    }
+  }
+}
+
+#latestnews {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 730px;
+  width: 100%;
+  background-color: #faf9f9;
+
+  .latestnewsmain {
+    display: flex;
+      justify-content: center;
+      align-items: center;
+    height: 200px;  
+    text-align: center;
+    flex-direction: column;
+
+    h1 {
+      color: #222;
+      font-family: "Poppins", sans-serif;
+      font-weight: 600;
+      font-size: 33px;
+      
+    }
+
+    p {
+      color: #9b9b9b;
+      width: 55%;
+    }
+  }
+
+  .whatmakes {
+    display: flex;
+    gap: 10px;
+    flex-direction: column;
+
+    p {
+      width: 30%;
+       display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 14px;
+      background-color: black;
+      line-height: 23px;
+      font-weight: 100;
+     
+      color: #a8a4a4;
+    }
+
+    h4 {
+      font-family: "Poppins", sans-serif;
+      color: #222;
+      font-weight: 700;
+         width: 70%;
+      font-size: 16px;
+      cursor: pointer;
+    }
+  }
+}
+
+#hottropics {
+  width: 100%;
+  height: 960px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #f9f9ff;
+
+  .row {
+    .hottropicstext {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+       width: 100%;
+      height: 200px;
+      flex-direction: column;
+      text-align: center;
+
+      h1 {
+        font-family: "Poppins", sans-serif;
+        color: #222;
+        font-weight: 600;
+        font-size: 36px;
+      }
+
+      p {
+        width: 65%;
+        color: #9b9b9b;
+      }
+    }
+
+    .Becomes {
+      position: relative;
+      display: flex;
+     
+      gap: 20px;
+
+      .Becomestext {
+        padding-top: 20px;
+        width: 100%;
+        h4 {
+          font-family: "Poppins", sans-serif;
+          color: #222;
+          font-weight: 600;
+          font-size: 20px;
+          cursor: pointer;
+
+          &:hover {
+            color: #69b4fd;
+          }
+        }
+
+        p {
+          width: 67%;
+          color: #9b9b9b;
+        }
+
+        .month {
+          display: flex;
+          align-items: center;
+           width: 16%;
+          height: 50%;
+          justify-content: center;
+          flex-direction: column;
+          background-color: #111111;
+         position: absolute;
+         text-align: center;
+          top: 0%;
+          left: 0%;
+
+          h4 {
+             height: 20%;
+            color: white;
+           
+          }
+          p {
+            height: 20%;
+          }
+        }
+
+        .heartandcomment {
+          display: flex;
+          justify-content: space-around;
+
+          p { 
+             width: 50%;
+            color: #9b9b9b;
+          
+          }
+        }
+      }
+    }
+  }
+
+  .loadmore {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 170px;
+
+    button {
+      width: 13%;
+      height: 24%;
+      background-color: #69b4fd;
+      border-radius: 25px;
+      font-size: 14px;
+      border: none;
+      color: white;
+
+      &:hover {
+        background: none;
+        color: #69b4fd;
+        border: 1px solid #69b4fd;
+      }
+    }
+  }
+}
+
+#fashionnews {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 920px;
+
+  .fashionnewsmain {
+    height: 270px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+    h1 {
+      font-weight: 600;
+      font-size: 36px;
+      font-family: "Poppins", sans-serif;
+      color: #222;
+    }
+
+    p {
+      color: #777777;
+      width: 66%;
+      font-size: 16px;
+      text-align: center;
+    }
+  }
+
+  .addictionall {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center; 
+      gap: 16px;
+    flex-direction: column;
+
+    .jan {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 14px;
+      line-height: 23px;
+      font-weight: 100;
+      background-color: black;
+      width: 50%;
+      height: 30px;
+      color: #a8a4a4;
+    }
+
+    .heartcommentLike {
+      display: flex;
+      justify-content: space-between;
+
+      p {
+        color: #777777;
+        width: 50%;
+        font-size: 15px;
+      }
+    }
+  }
+
+  h4 {
+    font-family: "Poppins", sans-serif;
+    color: #222;
+    width: 100%;
+    font-size: 20px;
+    cursor: pointer;
+    font-weight: 500;
+    &:hover {
+      color: #5eacfa;
+    }
+  }
+
+  p {
+    width: 65%;
+    font-size: 16px;
+    color: #777777;
+  }
+
+  .loadmorebutton {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+       height: 160px;
+
+    button {
+      width: 16%;
+      height: 28%;
+      font-size: 14px;
+      font-weight: 600;
+      background-color: #56a2ee;
+       border-radius: 25px;
+      border: none;
+      color: white;
+
+      &:hover { 
+         color: #69b4fd;
+        background: none;
+        border: 1px solid #668baf;
+      }
+    }
+  }
+}
+
+#bloggerteam {
+  width: 100%;
+  height: 780px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #eeeef5;
+
+  .bloggerteamtext {
+    height: 190px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: start;
+
+    h1 {
+      font-size: 36px;
+      font-family: "Poppins", sans-serif;
+      color: #222;
+      font-weight: 600;
+    }
+
+    p {
+      color: #777777;
+      width: 66%;
+      text-align: center;
+      font-size: 16px;
+    }
+  }
+
+  .bloggertext {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    flex-direction: column;
+
+    p {
+      width: 90%;
+      font-size: 15px;
+      line-height: 23px;
+      font-weight: 400;
+      color: #777777;
+    }
+  }
+
+  .developer {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    .Seniorcoredeveloper {
+      height: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+
+      h4 {
+        height: 47px;
+        display: flex;
+        align-items: end;
+        color: #222222;
+          font-size: 20px;
+        font-weight: 700;
+        
+      
+      }
+
+      p {
+        color: #777777;
+        font-size: 17x;
+        font-weight: 600;
+      }
+    }
+  }
+}
+
+#bloggerfooter {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 500px;
+  background-color: #222222;
+
+  .bloggerfootermain {
+    width: 100%;
+    height: 60%;
+
+    h6 {
+      height: 28%;
+      color: white; 
+      font-size: 20px;
+      font-weight: 700;
+    
+    }
+
+    p {
+      font-size: 14px;
+      line-height: 23px;
+      font-weight: 300;
+      color: white;
+    }
+  }
+
+  .letter {
+    width: 100%;
+    height: 100%;
+
+    h6 {
+      height: 30%;
+      font-size: 18px;
+      color: white;
+      font-weight: 700;
+    }
+
+    P {
+      font-size: 16px;
+      color: white;
+      line-height: 23px;
+      font-weight: 300;
+    }
+
+    .letteremailbutton {
+      width: 100%;
+      height: 25%;
+      display: flex;
+      gap: 30px;
+
+      input {
+        width: 65%;
+        height: 98%;
+        border: none;
+  border-radius: 20px;
+        &::placeholder {
+          padding: 15px;
+          font-size: 17px;
+          background-color: rgb(247, 244, 244);
+        }
+      }
+
+      .subscribebtn {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 30%;
+        height: 100%;
+        background-color: #69b4fd;
+          font-size: 14px;
+        font-weight: 500;
+        color: white;
+        border-radius: 23px;
+        border: none;
+        gap: 20px;
+      }
+    }
+  }
+
+  .feed {
+    height: 100%;
+    .feedphotothree {
+      width: 100%;
+      gap: 5px;
+    }
+    h6 {
+      font-size: 18px;
+      color: white;
+      font-weight: 500;
+      line-height: 20px;
+      height: 16%;
+  
+    }
+  }
+
+  .copyright {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    height: 100%;
+    margin-top: 20px;
+
+    p {
+      width: 100%;
+      color: #777777;
+      font-size: 16px;
+
+      span {
+        font-size: 16px;
+        color: #69b4fd;
+      }
+    }
+
+    .socialmediafour {
+      display: flex;
+      align-items: center;
+      width: 60%;
+      height: 100%;
+      
+      color: white;
+      justify-content: end;
+      gap: 8px;
+      i {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+         width: 12%;
+        height: 70%;
+        background-color: #111111;
+        color: #ffffff;
+        &:hover {
+          background-color: #69b4fd;
+        }
+      }
+    }
+  }
+}
